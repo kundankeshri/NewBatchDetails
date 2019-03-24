@@ -1,0 +1,4 @@
+use ng install to download the dependencies.
+use ng serve to build the app.(It will launch in localhost:4200)
+To check api use node server command (It will launch in localhost:3000)
+U will find the api details in server folder -> Routing->app.js
