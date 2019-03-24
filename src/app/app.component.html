@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <br/>
+  <div>
+      <label>CountryName: </label>&nbsp;&nbsp;&nbsp;
+      <select  #ip list="ip" type="text" (change)="searchReport($event,ip.value)"  style="width:15%; height: 7%">
+        <option *ngFor="let skill of coutryName"  id="ip"
+         style="width: 100px">
+        {{ skill.value }}
+        </option>
+      </select>
+      <br/>
+      <label>StateName: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select  #ip1 list="ip1" type="text"  style="width:15%; height: 7%">
+        <option *ngFor="let skill of this.stateName[0].value"  id="ip1"
+         style="width: 100px">
+        {{ skill.value }}
+        </option>
+      </select>
+  </div>
+</div>
